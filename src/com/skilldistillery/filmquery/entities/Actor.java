@@ -34,9 +34,16 @@ public class Actor {
 		this.id = id;
 	}
 	
+	public Actor(int filmId, String title, String fname2, String lname2) {
+		super();
+		this.fname = fname2;
+		this.lname = lname2;
+		
+		
+	}
 	@Override
 	public String toString() {
-		return "Actor [fname=" + fname + ", lname=" + lname + ", id=" + id + "]";
+		return "Actor [first name=" + fname + ", last name=" + lname + ", id=" + id + "]";
 	}
 
 	
