@@ -91,10 +91,18 @@ public class FilmQueryApp {
 				System.out.println("Enter a film id: ");
 				int filmIdActors = kb.nextInt();
 				actors = db.findActorsByFilmId(filmIdActors);
+				film = db.findFilmById(filmIdActors);
 				System.out.println();
-				System.out.println(actors);
+				if (film != null) {
+					System.out.println(actors);
+					break;
 
-				break;
+				} else {
+					System.out.println();
+					System.out.println("Please enter a valid film id.");
+					System.out.println();
+					continue;
+				}
 			case 4:
 				System.out.println("Enter a keyword to search the matching films: ");
 				String keyword = kb.next();

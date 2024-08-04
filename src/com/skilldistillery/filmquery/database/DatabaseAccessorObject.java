@@ -48,7 +48,7 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 				film.setLanguage(rs.getString(5));
 				film.setLength(rs.getInt(6));
 				film.setRating(rs.getString(7));
-				System.out.println(film.toString());
+//				System.out.println(film.toString());
 				}
 			rs.close();
 			stmt.close();
